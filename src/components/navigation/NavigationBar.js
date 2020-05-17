@@ -5,21 +5,13 @@ import {useMediaQuery} from "@material-ui/core";
 import "../../App.css";
 import MobileNavigationHeader from "./MobileNavigationHeader";
 import DesktopNavigationHeader from "./DesktopNavigationHeader";
-import {makeStyles} from "@material-ui/styles";
 
-function NavigationBar(props) {
+function NavigationBar() {
 
     const mobileScreen = useMediaQuery('(max-width: 800px)');
 
-    const useStyles = makeStyles({
-        root: {
-            backgroundColor: "white"
-        }
-    });
-
-    const classes = useStyles();
     return (
-        <AppBar className={classes.root} variant="outlined" elevation={2}>
+        <AppBar variant="outlined">
             {
                 (mobileScreen) ?
                     (<MobileNavigationHeader/>) :

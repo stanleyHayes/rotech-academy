@@ -1,3 +1,9 @@
+html, body{
+  font-family: "Quicksand sans-serif", serif !important; ;
+}
+
+
+
 .Nav-Container{
   list-style-type: none;
   flex-grow: 2;
@@ -65,10 +71,10 @@
   justify-content: center;
 }
 
-.green-background{
-  background-color: #69be28;
+.orange-background{
+  background-color: orange;
 }
 
-.bluish-background{
-  background-color: #024;
+.black-background{
+  background-color: black;
 }

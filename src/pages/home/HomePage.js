@@ -17,21 +17,25 @@ function HomePage() {
             marginTop: 16,
             marginBottom: 16,
             paddingTop: 16,
-            paddingBottom: 16
+            paddingBottom: 16,
+            fontFamily: "Quicksand"
         },
         service: {
             fontSize: 20,
             lineHeight: 1.5,
             letterSpacing: 1.5,
             marginTop: 16,
-            marginBottom: 16
+            marginBottom: 16,
+            fontFamily: "Quicksand"
         },
         title: {
             color: "rgba(255, 255, 255, 0.8)",
+            fontFamily: "Quicksand"
         },
         serviceHeader: {
             fontWeight: "bold",
             fontSize: 24,
+            fontFamily: "Quicksand"
         },
         teamTitle: {
             color: "#a5acaf",
@@ -39,7 +43,8 @@ function HomePage() {
             marginTop: 16,
             marginBottom: 16,
             paddingTop: 16,
-            paddingBottom: 16
+            paddingBottom: 16,
+            fontFamily: "Quicksand"
         }
     });
 
@@ -50,14 +55,13 @@ function HomePage() {
             <div>
                 <div className="section">
                     <div>
-                        <img width="100%" src={`${process.env.PUBLIC_URL}/images/Rotech-logo.jpg`} alt="Rotech logo"/>
+                        <img width="100%" src={`${process.env.PUBLIC_URL}/images/Rotech logo alt@2x-100.jpg`} alt="Rotech logo"/>
                     </div>
                 </div>
 
-                <div id="mission-and-vision" className="section green-background">
+                <div id="mission-and-vision" className="section orange-background">
                     <Container>
-                        <Typography className={classes.header} variant="h3">ABOUT US</Typography>
-                        <Typography className={classes.header} variant="h4">mission and vision</Typography>
+                        <Typography align="center"  className={classes.header} variant="h3">ABOUT US</Typography>
                         <Typography variant="body1" className={classes.service}>
                             Robotics and Technology Academy (ROTECH) seeks to equip
                             young Africans with the necessary Science Technology Engineering and Mathematics (STEM)
@@ -81,9 +85,9 @@ function HomePage() {
                     </Container>
                 </div>
 
-                <div id="our-team" className="section bluish-background">
+                <div id="our-team" className="section black-background">
                     <Container>
-                        <Typography className={classes.teamTitle} variant="h3">OUR TEAM</Typography>
+                        <Typography align="center"  className={classes.teamTitle} variant="h3">OUR TEAM</Typography>
                         <Grid container={true} justify="center" spacing={3}>
                             <Grid xs={12} md={4} item={true}>
                                 <TeamMember
@@ -119,16 +123,16 @@ function HomePage() {
                 </div>
 
 
-                <div id="services" className="section green-background">
+                <div id="services" className="section orange-background">
                     <Container>
-                        <Typography className={classes.header} variant="h3">OUR SERVICES</Typography>
+                        <Typography align="center" className={classes.header} variant="h3">OUR SERVICES</Typography>
 
                         <Grid container={true} justify="center" spacing={3}>
                             <Grid item={true} xs={12} md={4}>
                                 <ServiceItem
                                     disabled={true}
                                     title={"Competition Training"}
-                                    line1={" 2-Month Intensive Training"}
+                                    line1={"Intensive Training"}
                                     line2={" Competition of Your Choice"}
                                     line3={"Certificate of Completion"}
                                     line4={"Certificate of Achievement"}

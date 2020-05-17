@@ -7,19 +7,23 @@ function ServiceItem({title, line1, line2, line3, line4, line5, line6, disabled}
     const useStyles = makeStyles({
         item: {
             paddingTop: 16,
-            paddingBottom: 16
+            paddingBottom: 16,
+            fontFamily: "Quicksand"
         },
         card: {
             borderWidth: 2,
             borderColor: "black",
-            borderStyle: "solid"
+            borderStyle: "solid",
+            fontFamily: "Quicksand"
         },
         button: {
             backgroundColor: "black",
-            color: "white"
+            color: "white",
+            fontFamily: "Quicksand"
         },title: {
             fontWeight: "bold",
-            fontSize: 24
+            fontSize: 24,
+            fontFamily: "Quicksand"
         },
         divider: {
             backgroundColor: "black"

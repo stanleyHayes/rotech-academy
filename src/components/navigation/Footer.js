@@ -9,38 +9,45 @@ function Footer() {
         container: {
             display: "flex",
             flexDirection: "column",
-            minHeight: "50vh"
+            minHeight: "50vh",
+            fontFamily: "Quicksand"
         },
         mainLinksContainer: {
             flexGrow: 1
         },
         contactContainer: {
-            backgroundColor: "black",
+            backgroundColor: "orange",
             paddingTop: 16,
             paddingBottom: 16,
         },
         contactTitle: {
-            color: "rgba(255, 255, 255, .75)"
+            color: "black",
+            fontFamily: "Quicksand"
+        },
+        title: {
+            fontFamily: "Quicksand"
         }
     });
 
     const classes = useStyles();
     return (
-        <div className="footer-section bluish-background">
+        <div className="footer-section black-background">
             <div className={classes.container}>
                 <div className={classes.mainLinksContainer}>
                     <Container>
                         <Grid container={true} justify="center" spacing={5}>
                             <Grid item={true} xs={12} md={4}>
-                                <Typography align="center" variant="h6">Address</Typography>
+                                <Typography className={classes.title} align="center" variant="h6">Address</Typography>
 
                             </Grid>
                             <Grid item={true} xs={12} md={4}>
-                                <Typography align="center" variant="h6">Social Media Links</Typography>
+                                <Typography className={classes.title} align="center" variant="h6">Social Media
+                                    Links</Typography>
                             </Grid>
 
                             <Grid item={true} xs={12} md={4}>
-                                <Typography align="center" variant="h6">Subscribe to our newsletter</Typography>
+                                <Typography className={classes.title} align="center" variant="h6">Subscribe to our
+                                    newsletter</Typography>
                             </Grid>
                         </Grid>
                     </Container>
@@ -50,15 +57,18 @@ function Footer() {
                     <Container>
                         <Grid container={true} justify="center" spacing={5}>
                             <Grid item={true} xs={12} md={4}>
-                                <Typography className={classes.contactTitle}  align="center" variant="subtitle1">+233270048319</Typography>
+                                <Typography className={classes.contactTitle} align="center"
+                                            variant="subtitle1">+233270048319</Typography>
                             </Grid>
                             <Grid item={true} xs={12} md={4}>
-                                <Typography className={classes.contactTitle}  align="center" variant="subtitle1">hayfordstanley@gmail.com</Typography>
+                                <Typography className={classes.contactTitle} align="center"
+                                            variant="subtitle1">hayfordstanley@gmail.com</Typography>
 
                             </Grid>
 
                             <Grid item={true} xs={12} md={4}>
-                                <Typography className={classes.contactTitle} align="center" variant="subtitle1">+233555180048</Typography>
+                                <Typography className={classes.contactTitle} align="center"
+                                            variant="subtitle1">+233555180048</Typography>
                             </Grid>
                         </Grid>
                     </Container>

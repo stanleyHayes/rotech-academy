@@ -73,11 +73,15 @@ function ContactPage() {
             marginTop: 18,
             marginBottom: 16,
             color: "rgba(255, 255, 255, 0.8)",
-            backgroundColor: "#212121"
+            backgroundColor: "#212121",
+            fontFamily: "Quicksand"
         },
         divContainer: {
             background: "#eeeeee",
             marginTop: 50
+        },
+        text: {
+            fontFamily: "Quicksand"
         }
     });
 
@@ -88,12 +92,12 @@ function ContactPage() {
             <Layout>
                 <div className="contact-section dark-background">
                     <Container>
-                        <Typography gutterBottom={true} align="center" variant="h3">Contact Us</Typography>
+                        <Typography className={classes.text} gutterBottom={true} align="center" variant="h3">Contact Us</Typography>
                         <div>
                             <Typography gutterBottom={true} variant="h6" align="center">
                                 Our team is always ready to answer any question you have about our services
                             </Typography>
-                            <Typography gutterBottom={true} variant="h6" align="center">
+                            <Typography className={classes.text} gutterBottom={true} variant="h6" align="center">
                                 Send us a message and we will get back to you within 24 hours
                             </Typography>
                         </div>
@@ -107,11 +111,11 @@ function ContactPage() {
                             <Grid item={true} xs={12} md={8} lg={6}>
                                 <Card variant="elevation" raised={true} elevation={2}>
                                     <CardContent>
-                                        <Typography gutterBottom={true} variant="h6" align="center">
+                                        <Typography className={classes.text} gutterBottom={true} variant="h6" align="center">
                                             Let's Talk
                                         </Typography>
 
-                                        <Typography variant="caption">First Name</Typography>
+                                        <Typography className={classes.text} variant="caption">First Name</Typography>
                                         <TextField
                                             name="firstName"
                                             fullWidth={true}
@@ -123,7 +127,7 @@ function ContactPage() {
                                         />
 
 
-                                        <Typography variant="caption">Last Name</Typography>
+                                        <Typography className={classes.text} variant="caption">Last Name</Typography>
                                         <TextField
                                             name="lastName"
                                             fullWidth={true}
@@ -135,7 +139,7 @@ function ContactPage() {
                                         />
 
 
-                                        <Typography variant="caption">Email</Typography>
+                                        <Typography className={classes.text} variant="caption">Email</Typography>
                                         <TextField
                                             required={true}
                                             name="email"
@@ -147,7 +151,7 @@ function ContactPage() {
                                             onChange={handleContactChange}
                                         />
 
-                                        <Typography variant="caption">Subject</Typography>
+                                        <Typography className={classes.text} variant="caption">Subject</Typography>
                                         <TextField
                                             required={true}
                                             name="subject"
@@ -159,7 +163,7 @@ function ContactPage() {
                                             onChange={handleContactChange}
                                         />
 
-                                        <Typography variant="caption">Company</Typography>
+                                        <Typography className={classes.text} variant="caption">Company</Typography>
                                         <TextField
                                             name="company"
                                             fullWidth={true}
@@ -170,7 +174,7 @@ function ContactPage() {
                                             onChange={handleContactChange}
                                         />
 
-                                        <Typography variant="caption">Role</Typography>
+                                        <Typography className={classes.text} variant="caption">Role</Typography>
                                         <TextField
                                             name="role"
                                             fullWidth={true}
@@ -181,7 +185,7 @@ function ContactPage() {
                                             onChange={handleContactChange}
                                         />
 
-                                        <Typography variant="caption">Phone</Typography>
+                                        <Typography className={classes.text} variant="caption">Phone</Typography>
                                         <TextField
                                             name="phone"
                                             fullWidth={true}
@@ -192,7 +196,7 @@ function ContactPage() {
                                             onChange={handleContactChange}
                                         />
 
-                                        <Typography variant="caption">Message</Typography>
+                                        <Typography className={classes.text} variant="caption">Message</Typography>
                                         <TextField
                                             name="message"
                                             fullWidth={true}

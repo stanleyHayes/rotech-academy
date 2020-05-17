@@ -1,5 +1,5 @@
 import React from "react";
-import {Toolbar, Grid, Button, Typography, Avatar} from "@material-ui/core";
+import {Toolbar, Grid, Button, Typography} from "@material-ui/core";
 import {Link} from "react-router-dom";
 import {makeStyles} from "@material-ui/core/styles";
 
@@ -16,7 +16,8 @@ function DesktopNavigationHeader(props) {
         title: {
             color: "white",
             fontWeight: "bold",
-            fontSize: 24
+            fontSize: 24,
+            fontFamily: "Quicksand"
         },
         navLinks: {
             flexGrow: 1
@@ -35,7 +36,8 @@ function DesktopNavigationHeader(props) {
             backgroundColor: "black"
         },
         link: {
-            color: "white"
+            color: "white",
+            fontFamily: "Quicksand"
         }
     });
 

@@ -14,16 +14,20 @@ function TeamMember({name, position, major, school, image}) {
             paddingBottom: 16,
         },
         story: {
-
+            fontFamily: "Quicksand"
         },
         major: {
-
+            fontFamily: "Quicksand"
         },
         school: {
-
+            fontFamily: "Quicksand"
         },
         position: {
-            color: "#777777"
+            color: "#777777",
+            fontFamily: "Quicksand"
+        },
+        name: {
+            fontFamily: "Quicksand"
         }
     });
 
@@ -41,10 +45,13 @@ function TeamMember({name, position, major, school, image}) {
                         <Avatar variant={"circle"} className={classes.avatar} src={image}/>
                     </Grid>
                 </Grid>
-                <Typography gutterBottom={true} variant="h4" align="center">{name}</Typography>
-                <Typography align="center" gutterBottom={true} className={classes.position} variant="subtitle2">{position}</Typography>
-                <Typography align="center" gutterBottom={true} className={classes.major} variant="subtitle1">{major}</Typography>
-                <Typography align="center" gutterBottom={true} className={classes.school} variant="subtitle1">{school}</Typography>
+                <Typography className={classes.name} gutterBottom={true} variant="h4" align="center">{name}</Typography>
+                <Typography align="center" gutterBottom={true} className={classes.position}
+                            variant="subtitle2">{position}</Typography>
+                <Typography align="center" gutterBottom={true} className={classes.major}
+                            variant="subtitle1">{major}</Typography>
+                <Typography align="center" gutterBottom={true} className={classes.school}
+                            variant="subtitle1">{school}</Typography>
             </CardContent>
         </Card>
     )
