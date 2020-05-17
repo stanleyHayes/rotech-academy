@@ -78,3 +78,7 @@ html, body{
 .black-background{
   background-color: black;
 }
+
+.MuiSvgIcon-root{
+  color: white !important;
+}

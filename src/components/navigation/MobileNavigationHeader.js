@@ -21,8 +21,12 @@ function MobileNavigationHeader() {
             flexGrow: 1
         },
         title: {
-            color: "orange",
-            fontWeight: "bold"
+            color: "white",
+            fontWeight: "bold",
+            fontFamily: "Quicksand"
+        },
+        toolbar: {
+            backgroundColor: "black"
         }
     });
 
@@ -38,7 +42,7 @@ function MobileNavigationHeader() {
     }
 
     return (
-        <Toolbar variant="regular">
+        <Toolbar variant="regular" className={classes.toolbar}>
             <div className={classes.container}>
                 <div>
                     <Button onClick={handleMenuItemClicked}>
