@@ -1,17 +1,17 @@
 import React, {useState} from "react";
 import Layout from "../../components/layout/Layout";
-import {Container, Typography, Grid, Card, CardContent, TextField, Button} from "@material-ui/core";
+import {Container, Typography, Grid, Card, CardContent, TextField, Button, LinearProgress} from "@material-ui/core";
 import {makeStyles} from "@material-ui/styles";
-import axios from "axios";
 import * as Swal from "sweetalert2";
 import "../../App.css";
+import emailjs from "emailjs-com";
 
 function ContactPage() {
 
     const [contact, setContact] = useState({});
     const [error, setError] = useState({});
     const [loading, setLoading] = useState(false);
-    const {firstName, lastName, company, role, email, phone, message} = contact;
+    const {firstName, lastName, company, role, email, phone, message, subject} = contact;
 
     function handleContactChange(event) {
         setContact({...contact, [event.target.name]: event.target.value});
@@ -22,15 +22,20 @@ function ContactPage() {
         if (!email) {
             setError({...error, email: "Field required"})
             return;
+        }else {
+            setError({...error, email: null})
+        }
+        if (!email) {
+            setError({...error, subject: "Field required"})
+            return;
+        }else {
+            setError({...error, subject: null});
         }
 
         setLoading(true);
 
-        axios({
-            method: 'post',
-            url: `http://localhost:5000/api/v1/contact`,
-            data: contact
-        }).then(function () {
+        emailjs.send('default_service', 'contact_form', {...contact}, 'user_5CNXathy81NAg9ARsitgI')
+       .then(function () {
             Swal.fire({
                 icon: "success",
                 title: "Success",
@@ -45,10 +50,12 @@ function ContactPage() {
                 role: "",
                 email: "",
                 phone: "",
-                message: ""
+                message: "",
+                subject: ""
             });
             setLoading(false);
-        }).catch(function () {
+        }).catch(function (error) {
+            console.log(error.message);
             Swal.fire({
                 icon: "error",
                 title: "Failure",
@@ -94,6 +101,7 @@ function ContactPage() {
                 </div>
 
                 <div className="light-background section">
+                    {loading && <LinearProgress variant="query" />}
                     <Container>
                         <Grid container={true} justify="center" spacing={5}>
                             <Grid item={true} xs={12} md={8} lg={6}>
@@ -139,6 +147,17 @@ function ContactPage() {
                                             onChange={handleContactChange}
                                         />
 
+                                        <Typography variant="caption">Subject</Typography>
+                                        <TextField
+                                            required={true}
+                                            name="subject"
+                                            fullWidth={true}
+                                            variant="outlined"
+                                            margin="dense"
+                                            value={subject}
+                                            helperText={error.subject}
+                                            onChange={handleContactChange}
+                                        />
 
                                         <Typography variant="caption">Company</Typography>
                                         <TextField
