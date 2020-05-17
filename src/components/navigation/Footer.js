@@ -18,7 +18,8 @@ function Footer() {
         contactContainer: {
             backgroundColor: "#424242",
             paddingTop: 16,
-            paddingBottom: 16
+            paddingBottom: 16,
+            marginBottom: -50
         }
 
     });
