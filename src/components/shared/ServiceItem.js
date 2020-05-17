@@ -55,9 +55,13 @@ function ServiceItem({title, line1, line2, line3, line4, line5, line6, disabled}
 
                 <Divider variant="fullWidth" />
 
-                <Typography className={classes.item} gutterBottom={true} variant="subtitle1">{line4}</Typography>
+                {line4 ? (
+                    <div>
+                        <Typography className={classes.item} gutterBottom={true} variant="subtitle1">{line4}</Typography>
 
-                <Divider variant="fullWidth" />
+                        <Divider variant="fullWidth" />
+                    </div>
+                ) :  null}
 
                 <Typography className={classes.item} gutterBottom={true} variant="subtitle1">{line5}</Typography>
 

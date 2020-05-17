@@ -78,8 +78,8 @@ function HomePage() {
                         </Typography>
 
                         <Typography className={classes.service} gutterBottom={true} variant="body1">
-                            We provide services in the form of providing certified online robotics training, training
-                            teams for national and international robotics competitions and equipping young individuals
+                            We provide services in the form of providing certified online robotics courses, training
+                            teams for national and international robotics competitions, as well as equipping young individuals
                             with tools to develop commercial problem solving robots for industry.”
                         </Typography>
                     </Container>
@@ -93,7 +93,7 @@ function HomePage() {
                                 <TeamMember
                                     name={"Benedict Amoako"}
                                     image={`${process.env.PUBLIC_URL}/logo512.png`}
-                                    major={"Information Technology major"}
+                                    major={"Information Technology Major"}
                                     position={"Founder / Lead Instructor"}
                                     school={"Academic City College"}
                                 />
@@ -103,7 +103,7 @@ function HomePage() {
                                 <TeamMember
                                     name={"Dillys Annan"}
                                     image={`${process.env.PUBLIC_URL}/logo512.png`}
-                                    major={"Computer Engineering major"}
+                                    major={"Computer Engineering Major"}
                                     position={"Programs Coordinator"}
                                     school={"KNUST"}
                                 />
@@ -113,7 +113,7 @@ function HomePage() {
                                 <TeamMember
                                     name={"Enam"}
                                     image={`${process.env.PUBLIC_URL}/logo512.png`}
-                                    major={"Computer Science"}
+                                    major={"Computer Science Major"}
                                     position={"Content/Marketing Manager"}
                                     school={"KNUST"}
                                 />
@@ -135,7 +135,6 @@ function HomePage() {
                                     line1={"Intensive Training"}
                                     line2={" Competition of Your Choice"}
                                     line3={"Certificate of Completion"}
-                                    line4={"Certificate of Achievement"}
                                     line5={"Participate in a Competition!"}
                                     line6={"Coming Soon"}
                                 />
@@ -144,7 +143,7 @@ function HomePage() {
                                 <ServiceItem
                                     disabled={false}
                                     title={"Online Robotics Course"}
-                                    line1={"2-Month Class"}
+                                    line1={"2-Month Courses"}
                                     line2={"Free Robot Kit"}
                                     line3={"Certificate of Achievement"}
                                     line4={"STEM Curriculum"}
@@ -157,7 +156,7 @@ function HomePage() {
                                     disabled={true}
                                     title={"Research and Development"}
                                     line1={"Be on a Product Development Team"}
-                                    line2={"All Equipment provided"}
+                                    line2={"All Equipment Provided"}
                                     line3={"Apply Problem Solving Skills"}
                                     line6={"Coming Soon"}
                                     line4={" Contract Based Employment"}

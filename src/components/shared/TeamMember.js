@@ -28,13 +28,18 @@ function TeamMember({name, position, major, school, image}) {
         },
         name: {
             fontFamily: "Quicksand"
+        },
+        card: {
+            borderColor: "orange",
+            borderWidth: 2,
+            borderStyle: "solid"
         }
     });
 
     const classes = useStyles();
 
     return (
-        <Card elevation={2} raised={true} variant="elevation">
+        <Card className={classes.card} variant="outlined">
             <CardContent>
                 <Grid
                     className={classes.avatarContainer}
