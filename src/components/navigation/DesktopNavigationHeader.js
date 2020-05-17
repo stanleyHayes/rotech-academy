@@ -10,11 +10,11 @@ function DesktopNavigationHeader(props) {
             display: "flex",
             justifyContent: "space-around",
             alignItems: "center",
-            backgroundColor: "white",
+            backgroundColor: "black",
             flex: 1
         },
         title: {
-            color: "orange",
+            color: "white",
             fontWeight: "bold",
             fontSize: 24
         },
@@ -30,13 +30,19 @@ function DesktopNavigationHeader(props) {
             display: "flex",
             alignItems: "center",
             paddingRight: 16
+        },
+        toolbar: {
+            backgroundColor: "black"
+        },
+        link: {
+            color: "white"
         }
     });
 
     const classes = useStyles();
 
     return (
-        <Toolbar title="Heal the world" variant="regular">
+        <Toolbar className={classes.toolbar} title="Rotech" variant="regular">
             <div className={classes.container}>
                 <div className={classes.brandContainer}>
                     <Typography className={classes.title} variant="h4">Rotech</Typography>
@@ -45,38 +51,38 @@ function DesktopNavigationHeader(props) {
                     <Grid item={true} container={true} direction="row" justify="center">
                         <Grid item={true}>
                             <Button variant="text">
-                                <Link style={{textDecoration: "none"}} to="/">Home</Link>
+                                <Link className={classes.link}  style={{textDecoration: "none"}} to="/">Home</Link>
                             </Button>
                         </Grid>
 
                         <Grid item={true}>
                             <Button variant="text">
-                                <a style={{textDecoration: "none"}} href="#about">About Us</a>
+                                <a className={classes.link}  style={{textDecoration: "none"}} href="#about">About Us</a>
                             </Button>
                         </Grid>
 
 
                         <Grid item={true}>
                             <Button variant="text">
-                                <a style={{textDecoration: "none"}} href="#our-team">Our Team</a>
+                                <a className={classes.link} style={{textDecoration: "none"}} href="#our-team">Our Team</a>
                             </Button>
                         </Grid>
 
                         <Grid item={true}>
                             <Button variant="text">
-                                <a style={{textDecoration: "none"}} href="#mission-and-vision">Mission</a>
+                                <a className={classes.link}  style={{textDecoration: "none"}} href="#mission-and-vision">Mission</a>
                             </Button>
                         </Grid>
 
                         <Grid item={true}>
                             <Button variant="text">
-                                <a style={{textDecoration: "none"}} href="#services">Services</a>
+                                <a className={classes.link}  style={{textDecoration: "none"}} href="#services">Services</a>
                             </Button>
                         </Grid>
 
                         <Grid item={true}>
                             <Button variant="text">
-                                <Link style={{textDecoration: "none"}} to="/contact">Contact</Link>
+                                <Link className={classes.link}  style={{textDecoration: "none"}} to="/contact">Contact</Link>
                             </Button>
                         </Grid>
                     </Grid>

@@ -3,15 +3,7 @@ import Layout from "../../components/layout/Layout";
 import {
     Container,
     Typography,
-    Grid,
-    Table,
-    TableBody,
-    Button,
-    TableCell,
-    TableRow,
-    TableContainer,
-    TableHead,
-    Paper, useMediaQuery
+    Grid
 } from "@material-ui/core";
 import TeamMember from "../../components/shared/TeamMember";
 import {makeStyles} from "@material-ui/styles";
@@ -19,7 +11,6 @@ import ServiceItem from "../../components/shared/ServiceItem";
 
 function HomePage() {
 
-    const smallScreen = useMediaQuery('(max-width: 900px)');
 
     const useStyles = makeStyles({
         header: {
@@ -40,7 +31,15 @@ function HomePage() {
         },
         serviceHeader: {
             fontWeight: "bold",
-            fontSize: 24
+            fontSize: 24,
+        },
+        teamTitle: {
+            color: "#a5acaf",
+            fontWeight: "bold",
+            marginTop: 16,
+            marginBottom: 16,
+            paddingTop: 16,
+            paddingBottom: 16
         }
     });
 
@@ -55,7 +54,7 @@ function HomePage() {
                     </div>
                 </div>
 
-                <div id="mission-and-vision" className="section light-background">
+                <div id="mission-and-vision" className="section green-background">
                     <Container>
                         <Typography className={classes.header} variant="h3">ABOUT US</Typography>
                         <Typography className={classes.header} variant="h4">mission and vision</Typography>
@@ -82,9 +81,9 @@ function HomePage() {
                     </Container>
                 </div>
 
-                <div id="our-team" className="section dark-background">
+                <div id="our-team" className="section bluish-background">
                     <Container>
-                        <Typography className={classes.header} variant="h3">OUR TEAM</Typography>
+                        <Typography className={classes.teamTitle} variant="h3">OUR TEAM</Typography>
                         <Grid container={true} justify="center" spacing={3}>
                             <Grid xs={12} md={4} item={true}>
                                 <TeamMember
@@ -120,157 +119,48 @@ function HomePage() {
                 </div>
 
 
-                <div id="services" className="section light-background">
+                <div id="services" className="section green-background">
                     <Container>
                         <Typography className={classes.header} variant="h3">OUR SERVICES</Typography>
 
-                        {
-                            (smallScreen) ? (
-                                <Grid container={true} justify="center" spacing={3}>
-                                    <Grid item={true} xs={12} md={4}>
-                                        <ServiceItem
-                                            disabled={true}
-                                            title={"Competition Training"}
-                                            line1={" 2-Month Intensive Training"}
-                                            line2={" Competition of Your Choice"}
-                                            line3={"Certificate of Completion"}
-                                            line4={"Certificate of Achievement"}
-                                            line5={"Participate in a Competition!"}
-                                            line6={"Coming Soon"}
-                                        />
-                                    </Grid>
-                                    <Grid item={true} xs={12} md={4}>
-                                        <ServiceItem
-                                            disabled={false}
-                                            title={"Online Robotics Course"}
-                                            line1={"2-Month Class"}
-                                            line2={"Free Robot Kit"}
-                                            line3={"Certificate of Achievement"}
-                                            line4={"STEM Curriculum"}
-                                            line6={"STEM Curriculum"}
-                                            line5={"Ghc 500 Register Today!"}
-                                        />
-                                    </Grid>
-                                    <Grid item={true} xs={12} md={4}>
-                                        <ServiceItem
-                                            disabled={true}
-                                            title={"Research and Development"}
-                                            line1={"Be on a Product Development Team"}
-                                            line2={"All Equipment provided"}
-                                            line3={"Apply Problem Solving Skills"}
-                                            line6={"Coming Soon"}
-                                            line4={" Contract Based Employment"}
-                                            line5={"Develop a Commercial Robot!"}
-                                        />
-                                    </Grid>
-                                </Grid>
-                            ) : (
-                                <TableContainer component={Paper}>
-                                    <Table>
-                                        <TableHead>
-                                            <TableRow>
-                                                <TableCell className={classes.serviceHeader}>
-                                                    Competition Training
-                                                </TableCell>
-                                                <TableCell className={classes.serviceHeader}>
-                                                    Online Robotics Course
-                                                </TableCell>
-                                                <TableCell className={classes.serviceHeader}>
-                                                    Research and Development
-                                                </TableCell>
-                                            </TableRow>
-                                        </TableHead>
-                                        <TableBody>
-                                            <TableRow>
-                                                <TableCell>
-                                                    2-Month Intensive Training
-                                                </TableCell>
-                                                <TableCell>
-                                                    2-Month Class
-                                                </TableCell>
-                                                <TableCell>
-                                                    Be on a Product Development Team
-                                                </TableCell>
-                                            </TableRow>
-
-                                            <TableRow>
-                                                <TableCell>
-                                                    Competition of Your Choice
-                                                </TableCell>
-                                                <TableCell>
-                                                    Free Robot Kit
-                                                </TableCell>
-                                                <TableCell>
-                                                    All Equipment provided
-                                                </TableCell>
-                                            </TableRow>
-
-                                            <TableRow>
-                                                <TableCell>
-                                                    Certificate of Completion
-                                                </TableCell>
-                                                <TableCell>
-                                                    Certificate of Achievement
-                                                </TableCell>
-                                                <TableCell>
-                                                    Apply Problem Solving Skills
-                                                </TableCell>
-                                            </TableRow>
-
-                                            <TableRow>
-                                                <TableCell>
-                                                    Certificate of Achievement
-                                                </TableCell>
-                                                <TableCell>
-                                                    STEM Curriculum
-                                                </TableCell>
-                                                <TableCell>
-                                                    Contract Based Employment
-                                                </TableCell>
-                                            </TableRow>
-
-                                            <TableRow>
-                                                <TableCell>
-                                                    Participate in a Competition!
-                                                </TableCell>
-                                                <TableCell>
-                                                    Program a Real Robot!
-                                                </TableCell>
-                                                <TableCell>
-                                                    Develop a Commercial Robot!
-                                                </TableCell>
-                                            </TableRow>
-
-                                            <TableRow>
-                                                <TableCell>
-                                                    <Button
-                                                        color="primary"
-                                                        disabled={true}
-                                                        variant="outlined">
-                                                        Coming Soon
-                                                    </Button>
-                                                </TableCell>
-                                                <TableCell>
-                                                    <Button
-                                                        color="primary"
-                                                        variant="outlined">
-                                                        GHS 500. 00 Register Today
-                                                    </Button>
-                                                </TableCell>
-                                                <TableCell>
-                                                    <Button
-                                                        color="primary"
-                                                        disabled={true}
-                                                        variant="outlined">
-                                                        Coming Soon
-                                                    </Button>
-                                                </TableCell>
-                                            </TableRow>
-                                        </TableBody>
-                                    </Table>
-                                </TableContainer>
-                            )
-                        }
+                        <Grid container={true} justify="center" spacing={3}>
+                            <Grid item={true} xs={12} md={4}>
+                                <ServiceItem
+                                    disabled={true}
+                                    title={"Competition Training"}
+                                    line1={" 2-Month Intensive Training"}
+                                    line2={" Competition of Your Choice"}
+                                    line3={"Certificate of Completion"}
+                                    line4={"Certificate of Achievement"}
+                                    line5={"Participate in a Competition!"}
+                                    line6={"Coming Soon"}
+                                />
+                            </Grid>
+                            <Grid item={true} xs={12} md={4}>
+                                <ServiceItem
+                                    disabled={false}
+                                    title={"Online Robotics Course"}
+                                    line1={"2-Month Class"}
+                                    line2={"Free Robot Kit"}
+                                    line3={"Certificate of Achievement"}
+                                    line4={"STEM Curriculum"}
+                                    line5={"STEM Curriculum"}
+                                    line6={"Ghc 500 Register Today!"}
+                                />
+                            </Grid>
+                            <Grid item={true} xs={12} md={4}>
+                                <ServiceItem
+                                    disabled={true}
+                                    title={"Research and Development"}
+                                    line1={"Be on a Product Development Team"}
+                                    line2={"All Equipment provided"}
+                                    line3={"Apply Problem Solving Skills"}
+                                    line6={"Coming Soon"}
+                                    line4={" Contract Based Employment"}
+                                    line5={"Develop a Commercial Robot!"}
+                                />
+                            </Grid>
+                        </Grid>
                     </Container>
                 </div>
             </div>

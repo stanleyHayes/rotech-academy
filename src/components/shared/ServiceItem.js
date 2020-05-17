@@ -1,38 +1,73 @@
 import React from "react";
-import {Card, CardContent, Typography, Divider, CardActions, Button} from "@material-ui/core";
+import {Card, CardContent, Typography, Divider, CardActions, Button, CardHeader} from "@material-ui/core";
+import {makeStyles} from "@material-ui/styles";
 
 function ServiceItem({title, line1, line2, line3, line4, line5, line6, disabled}) {
 
+    const useStyles = makeStyles({
+        item: {
+            paddingTop: 16,
+            paddingBottom: 16
+        },
+        card: {
+            borderWidth: 2,
+            borderColor: "black",
+            borderStyle: "solid"
+        },
+        button: {
+            backgroundColor: "black",
+            color: "white"
+        },title: {
+            fontWeight: "bold",
+            fontSize: 24
+        },
+        divider: {
+            backgroundColor: "black"
+        }
+    });
+
+    const classes = useStyles();
+
     return (
-        <Card>
+        <Card variant="outlined" square={true} className={classes.card}>
+
+            <CardHeader
+                className={classes.title}
+                title={title} />
+
+            <Divider className={classes.divider} variant="fullWidth" />
+
             <CardContent>
-                <Typography gutterBottom={true} variant="h6">{title}</Typography>
+
+                <Typography className={classes.item} gutterBottom={true} variant="subtitle1">{line1}</Typography>
 
                 <Divider variant="fullWidth" />
 
-                <Typography gutterBottom={true} variant="subtitle1">{line1}</Typography>
+                <Typography className={classes.item} gutterBottom={true} variant="subtitle1">{line2}</Typography>
 
                 <Divider variant="fullWidth" />
 
-                <Typography gutterBottom={true} variant="subtitle1">{line2}</Typography>
+                <Typography className={classes.item} gutterBottom={true} variant="subtitle1">{line3}</Typography>
 
                 <Divider variant="fullWidth" />
 
-                <Typography gutterBottom={true} variant="subtitle1">{line3}</Typography>
+                <Typography className={classes.item} gutterBottom={true} variant="subtitle1">{line4}</Typography>
 
                 <Divider variant="fullWidth" />
 
-                <Typography gutterBottom={true} variant="subtitle1">{line4}</Typography>
-
-                <Divider variant="fullWidth" />
-
-                <Typography gutterBottom={true} variant="subtitle1">{line5}</Typography>
+                <Typography className={classes.item} gutterBottom={true} variant="subtitle1">{line5}</Typography>
 
             </CardContent>
             <Divider variant="fullWidth" />
 
             <CardActions>
-                <Button color="primary" variant="outlined" fullWidth={true} disabled={disabled}>{line6}</Button>
+                <Button
+                    disabled={disabled}
+                    className={classes.button}
+                    variant="contained"
+                    fullWidth={true}>
+                    {line6}
+                </Button>
             </CardActions>
         </Card>
     )

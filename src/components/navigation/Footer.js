@@ -9,24 +9,24 @@ function Footer() {
         container: {
             display: "flex",
             flexDirection: "column",
-            backgroundColor: "#212121",
             minHeight: "50vh"
         },
         mainLinksContainer: {
             flexGrow: 1
         },
         contactContainer: {
-            backgroundColor: "#424242",
+            backgroundColor: "black",
             paddingTop: 16,
             paddingBottom: 16,
-            marginBottom: -50
+        },
+        contactTitle: {
+            color: "rgba(255, 255, 255, .75)"
         }
-
     });
 
     const classes = useStyles();
     return (
-        <div className="section dark-background">
+        <div className="footer-section bluish-background">
             <div className={classes.container}>
                 <div className={classes.mainLinksContainer}>
                     <Container>
@@ -50,15 +50,15 @@ function Footer() {
                     <Container>
                         <Grid container={true} justify="center" spacing={5}>
                             <Grid item={true} xs={12} md={4}>
-                                <Typography align="center" variant="subtitle1">+233270048319</Typography>
+                                <Typography className={classes.contactTitle}  align="center" variant="subtitle1">+233270048319</Typography>
                             </Grid>
                             <Grid item={true} xs={12} md={4}>
-                                <Typography align="center" variant="subtitle1">hayfordstanley@gmail.com</Typography>
+                                <Typography className={classes.contactTitle}  align="center" variant="subtitle1">hayfordstanley@gmail.com</Typography>
 
                             </Grid>
 
                             <Grid item={true} xs={12} md={4}>
-                                <Typography align="center" variant="subtitle1">+233555180048</Typography>
+                                <Typography className={classes.contactTitle} align="center" variant="subtitle1">+233555180048</Typography>
                             </Grid>
                         </Grid>
                     </Container>
