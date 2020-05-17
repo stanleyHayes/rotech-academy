@@ -72,8 +72,8 @@ function ContactPage() {
         button: {
             marginTop: 18,
             marginBottom: 16,
-            color: "rgba(255, 255, 255, 0.8)",
-            backgroundColor: "#212121",
+            color: "black",
+            backgroundColor: "orange",
             fontFamily: "Quicksand"
         },
         divContainer: {
@@ -90,7 +90,7 @@ function ContactPage() {
     return (
         <div className={classes.divContainer}>
             <Layout>
-                <div className="contact-section dark-background">
+                <div className="contact-section orange-background">
                     <Container>
                         <Typography className={classes.text} gutterBottom={true} align="center" variant="h3">Contact Us</Typography>
                         <div>

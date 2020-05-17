@@ -14,7 +14,7 @@ function DesktopNavigationHeader(props) {
             flex: 1
         },
         title: {
-            color: "white",
+            color: "orange",
             fontWeight: "bold",
             fontSize: 24,
             fontFamily: "Quicksand"
@@ -63,18 +63,6 @@ function DesktopNavigationHeader(props) {
                             </Button>
                         </Grid>
 
-
-                        <Grid item={true}>
-                            <Button variant="text">
-                                <a className={classes.link} style={{textDecoration: "none"}} href="#our-team">Our Team</a>
-                            </Button>
-                        </Grid>
-
-                        <Grid item={true}>
-                            <Button variant="text">
-                                <a className={classes.link}  style={{textDecoration: "none"}} href="#mission-and-vision">Mission</a>
-                            </Button>
-                        </Grid>
 
                         <Grid item={true}>
                             <Button variant="text">

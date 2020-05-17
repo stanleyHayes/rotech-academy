@@ -12,9 +12,10 @@ function ServiceItem({title, line1, line2, line3, line4, line5, line6, disabled}
         },
         card: {
             borderWidth: 2,
-            borderColor: "black",
+            borderColor: "orange",
             borderStyle: "solid",
-            fontFamily: "Quicksand"
+            fontFamily: "Quicksand",
+            minHeight: 480
         },
         button: {
             backgroundColor: "black",

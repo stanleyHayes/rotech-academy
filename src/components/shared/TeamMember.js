@@ -30,7 +30,7 @@ function TeamMember({name, position, major, school, image}) {
             fontFamily: "Quicksand"
         },
         card: {
-            borderColor: "orange",
+            borderColor: "black",
             borderWidth: 2,
             borderStyle: "solid"
         }

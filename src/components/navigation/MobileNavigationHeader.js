@@ -21,7 +21,7 @@ function MobileNavigationHeader() {
             flexGrow: 1
         },
         title: {
-            color: "white",
+            color: "orange",
             fontWeight: "bold",
             fontFamily: "Quicksand"
         },

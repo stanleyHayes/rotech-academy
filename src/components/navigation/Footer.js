@@ -16,22 +16,23 @@ function Footer() {
             flexGrow: 1
         },
         contactContainer: {
-            backgroundColor: "orange",
+            backgroundColor: "black",
             paddingTop: 16,
             paddingBottom: 16,
         },
         contactTitle: {
-            color: "black",
+            color: "orange",
             fontFamily: "Quicksand"
         },
         title: {
-            fontFamily: "Quicksand"
+            fontFamily: "Quicksand",
+            color: "black"
         }
     });
 
     const classes = useStyles();
     return (
-        <div className="footer-section black-background">
+        <div className="footer-section orange-background">
             <div className={classes.container}>
                 <div className={classes.mainLinksContainer}>
                     <Container>
