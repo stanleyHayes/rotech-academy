@@ -1,6 +1,7 @@
 import React from "react";
 import {Card, CardContent, Typography, Divider, CardActions, Button, CardHeader} from "@material-ui/core";
 import {makeStyles} from "@material-ui/styles";
+import "../../App.css";
 
 function ServiceItem({title, line1, line2, line3, line4, line5, line6, disabled}) {
 
@@ -8,33 +9,43 @@ function ServiceItem({title, line1, line2, line3, line4, line5, line6, disabled}
         item: {
             paddingTop: 16,
             paddingBottom: 16,
-            fontFamily: "Quicksand"
+            fontFamily: "Quicksand",
+            color: "rgba(255, 255, 255, 0.85)"
         },
         card: {
             borderWidth: 2,
-            borderColor: "orange",
+            borderColor: "rgba(255, 255, 255, 0.85)",
             borderStyle: "solid",
             fontFamily: "Quicksand",
             minHeight: 480,
+            borderRadius: 16,
+            backgroundColor: "#212121",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between"
         },
         button: {
-            backgroundColor: "black",
-            color: "white",
+            backgroundColor: "#272727",
+            color: "rgba(255, 255, 255, 0.85)",
             fontFamily: "Quicksand"
-        }, title: {
+        },
+        title: {
             fontWeight: "bold",
             fontSize: 24,
             fontFamily: "Quicksand",
-            textAlign: "center"
+            textAlign: "center",
+            color: "rgba(255, 255, 255, 0.85)",
+
         },
         divider: {
-            backgroundColor: "black"
+            backgroundColor: "rgba(255, 255, 255, 0.85)"
         },
         cardContent: {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            flexDirection: "column"
+            flexDirection: "column",
+            flex: 1
         },
         link: {
             textDecoration: "none",
@@ -75,18 +86,16 @@ function ServiceItem({title, line1, line2, line3, line4, line5, line6, disabled}
                     <div>
                         <Typography className={classes.item} gutterBottom={true}
                                     variant="subtitle1">{line4}</Typography>
-
                         <Divider variant="fullWidth"/>
                     </div>
-                ) : null}
+                ) : <div />}
 
                 <Typography className={classes.item} gutterBottom={true} variant="subtitle1">{line5}</Typography>
 
             </CardContent>
-            <Divider variant="fullWidth"/>
+            <Divider className={classes.divider} variant="fullWidth"/>
 
             <CardActions>
-
                 <a className={classes.link} target="_blank" href={`https://forms.gle/Kpkvn7qzAwLhUvwR7`}>
                     <Button
                         disabled={disabled}

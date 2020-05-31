@@ -121,18 +121,20 @@ function Footer() {
                                     Social Media Links
                                 </Typography>
                                 <div className={classes.socialIconsContainer}>
-                                    <a href="" target="_blank" className={classes.socialLink}><i></i>Facebook</a>
+                                    <a href="" target="_blank" className={classes.socialLink}>
+                                        <i className="fab fa-facebook"/>
+                                        Facebook</a>
                                 </div>
                                 <div className={classes.socialIconsContainer}>
                                     <a href="https://twitter.com/rotechacademy" target="_blank"
-                                       className={classes.socialLink}><i></i>Twitter</a>
+                                       className={classes.socialLink}><i className="fab fa-twitter"/>Twitter</a>
                                 </div>
                                 <div className={classes.socialIconsContainer}>
-                                    <a href="#" target="_blank" className={classes.socialLink}><i></i>Instagram</a>
+                                    <a href="#" target="_blank" className={classes.socialLink}><i className="fab fa-instagram"/>Instagram</a>
                                 </div>
                                 <div className={classes.socialIconsContainer}>
                                     <a href="mailto:rotechacademy@gmail.com" target="_blank"
-                                       className={classes.socialLink}><i></i>Email Us</a>
+                                       className={classes.socialLink}><i className="fab fa-email"/>Email Us</a>
                                 </div>
                             </Grid>
 

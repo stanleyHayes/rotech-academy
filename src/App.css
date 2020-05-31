@@ -82,3 +82,7 @@ html, body{
 .MuiSvgIcon-root{
   color: orange !important;
 }
+
+button.Mui-disabled{
+  color: rgba(255, 255, 255, 0.45) !important;
+}
