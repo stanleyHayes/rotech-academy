@@ -109,7 +109,7 @@ function HomePage() {
                             <Grid xs={12} md={4} item={true}>
                                 <TeamMember
                                     name={"Dillys Annan"}
-                                    image={`${process.env.PUBLIC_URL}/images/photo_2020-05-18_20-26-52.jpg`}
+                                    image={`${process.env.PUBLIC_URL}/images/crop.jpg`}
                                     major={"Computer Engineering Major"}
                                     position={"Programs Coordinator"}
                                     school={"KNUST"}
@@ -132,7 +132,12 @@ function HomePage() {
 
                 <div id="services" className="section black-background">
                     <Container>
-                        <Typography align="center" className={classes.ourServicesTitle} variant="h3">OUR SERVICES</Typography>
+                        <Typography
+                            align="center"
+                            className={classes.ourServicesTitle}
+                            variant="h3">
+                            OUR SERVICES
+                        </Typography>
 
                         <Grid container={true} justify="center" spacing={3}>
                             <Grid item={true} xs={12} md={4}>
