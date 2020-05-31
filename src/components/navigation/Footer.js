@@ -40,7 +40,7 @@ function Footer() {
             fontWeight: 500
         },
         logoAvatar: {
-            width: 140,
+            width: "80%",
             height: 140
         },
         slogan: {
@@ -48,7 +48,8 @@ function Footer() {
             fontFamily: "Quicksand",
             fontWeight: 500,
             fontSize: 14,
-            marginTop: 8
+            marginTop: 8,
+            marginBottom: 8
         },
         sloganContainer: {
             display: "flex",
@@ -143,7 +144,7 @@ function Footer() {
                                     <div className={classes.avatarContainer}>
                                         <Avatar
                                             src={`${process.env.PUBLIC_URL}/images/Rotech-logo.jpg`}
-                                            variant="circle"
+                                            variant="rounded"
                                             className={classes.logoAvatar}/>
                                     </div>
                                     <div>

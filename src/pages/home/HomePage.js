@@ -153,8 +153,8 @@ function HomePage() {
                                     line1={"8-Week Courses"}
                                     line2={"Free Robot Kit"}
                                     line3={"Certificate of Completion"}
-                                    line4={"Program a Real Robot"}
-                                    line5={"STEM Curriculum"}
+                                    line5={"Program a Real Robot"}
+                                    line4={"STEM Curriculum"}
                                     line6={"Ghc 800 Register Today!"}
                                 />
                             </Grid>
