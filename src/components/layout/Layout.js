@@ -12,7 +12,8 @@ function Layout(props) {
             minHeight: "100vh",
         },
         content: {
-            flexGrow: 1
+            flexGrow: 1,
+            maxWidth: "100vw"
         }
     });
 
@@ -24,7 +25,7 @@ function Layout(props) {
                 <NavigationBar/>
             </div>
             <div className={classes.content}>
-                {props.children}
+                    {props.children}
             </div>
             <div>
                 <Footer />
