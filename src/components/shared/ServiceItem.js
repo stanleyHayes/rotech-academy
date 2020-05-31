@@ -15,19 +15,34 @@ function ServiceItem({title, line1, line2, line3, line4, line5, line6, disabled}
             borderColor: "orange",
             borderStyle: "solid",
             fontFamily: "Quicksand",
-            minHeight: 480
+            minHeight: 480,
         },
         button: {
             backgroundColor: "black",
             color: "white",
             fontFamily: "Quicksand"
-        },title: {
+        }, title: {
             fontWeight: "bold",
             fontSize: 24,
-            fontFamily: "Quicksand"
+            fontFamily: "Quicksand",
+            textAlign: "center"
         },
         divider: {
             backgroundColor: "black"
+        },
+        cardContent: {
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            flexDirection: "column"
+        },
+        link: {
+            textDecoration: "none",
+            color: "white",
+            textAlign: "center",
+            width: "70%",
+            display: "inline-block",
+            margin: "0 auto"
         }
     });
 
@@ -38,45 +53,49 @@ function ServiceItem({title, line1, line2, line3, line4, line5, line6, disabled}
 
             <CardHeader
                 className={classes.title}
-                title={title} />
+                title={title}/>
 
-            <Divider className={classes.divider} variant="fullWidth" />
+            <Divider className={classes.divider} variant="fullWidth"/>
 
-            <CardContent>
+            <CardContent className={classes.cardContent}>
 
                 <Typography className={classes.item} gutterBottom={true} variant="subtitle1">{line1}</Typography>
 
-                <Divider variant="fullWidth" />
+                <Divider variant="fullWidth"/>
 
                 <Typography className={classes.item} gutterBottom={true} variant="subtitle1">{line2}</Typography>
 
-                <Divider variant="fullWidth" />
+                <Divider variant="fullWidth"/>
 
                 <Typography className={classes.item} gutterBottom={true} variant="subtitle1">{line3}</Typography>
 
-                <Divider variant="fullWidth" />
+                <Divider variant="fullWidth"/>
 
                 {line4 ? (
                     <div>
-                        <Typography className={classes.item} gutterBottom={true} variant="subtitle1">{line4}</Typography>
+                        <Typography className={classes.item} gutterBottom={true}
+                                    variant="subtitle1">{line4}</Typography>
 
-                        <Divider variant="fullWidth" />
+                        <Divider variant="fullWidth"/>
                     </div>
-                ) :  null}
+                ) : null}
 
                 <Typography className={classes.item} gutterBottom={true} variant="subtitle1">{line5}</Typography>
 
             </CardContent>
-            <Divider variant="fullWidth" />
+            <Divider variant="fullWidth"/>
 
             <CardActions>
-                <Button
-                    disabled={disabled}
-                    className={classes.button}
-                    variant="contained"
-                    fullWidth={true}>
-                    {line6}
-                </Button>
+
+                <a className={classes.link} target="_blank" href={`https://forms.gle/Kpkvn7qzAwLhUvwR7`}>
+                    <Button
+                        disabled={disabled}
+                        className={classes.button}
+                        variant="contained"
+                        fullWidth={true}>
+                        {line6}
+                    </Button>
+                </a>
             </CardActions>
         </Card>
     )

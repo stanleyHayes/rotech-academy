@@ -17,7 +17,8 @@ function DesktopNavigationHeader(props) {
             color: "orange",
             fontWeight: "bold",
             fontSize: 24,
-            fontFamily: "Quicksand"
+            fontFamily: "Quicksand",
+            textDecoration: "none"
         },
         navLinks: {
             flexGrow: 1
@@ -36,8 +37,10 @@ function DesktopNavigationHeader(props) {
             backgroundColor: "black"
         },
         link: {
-            color: "white",
-            fontFamily: "Quicksand"
+            color: "orange",
+            fontFamily: "Quicksand",
+            textDecoration: "none",
+
         }
     });
 
@@ -47,7 +50,11 @@ function DesktopNavigationHeader(props) {
         <Toolbar className={classes.toolbar} title="Rotech" variant="regular">
             <div className={classes.container}>
                 <div className={classes.brandContainer}>
-                    <Typography className={classes.title} variant="h4">Rotech</Typography>
+                    <Typography  variant="h5">
+                        <Link className={classes.title} to="/">
+                            Rotech
+                        </Link>
+                    </Typography>
                 </div>
                 <div>
                     <Grid item={true} container={true} direction="row" justify="center">
@@ -59,14 +66,14 @@ function DesktopNavigationHeader(props) {
 
                         <Grid item={true}>
                             <Button variant="text">
-                                <a className={classes.link}  style={{textDecoration: "none"}} href="#about">About Us</a>
+                                <a className={classes.link}  style={{textDecoration: "none"}} href="/#about">About Us</a>
                             </Button>
                         </Grid>
 
 
                         <Grid item={true}>
                             <Button variant="text">
-                                <a className={classes.link}  style={{textDecoration: "none"}} href="#services">Services</a>
+                                <a className={classes.link}  style={{textDecoration: "none"}} href="/#services">Services</a>
                             </Button>
                         </Grid>
 

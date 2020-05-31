@@ -6,8 +6,8 @@ function TeamMember({name, position, major, school, image}) {
 
     const useStyles = makeStyles({
         avatar: {
-            width: 75,
-            height: 75
+            width: 95,
+            height: 95
         },
         avatarContainer: {
             paddingTop: 16,
@@ -17,22 +17,27 @@ function TeamMember({name, position, major, school, image}) {
             fontFamily: "Quicksand"
         },
         major: {
-            fontFamily: "Quicksand"
+            fontFamily: "Quicksand",
+            color: "rgba(255, 255, 255, 0.85)"
         },
         school: {
-            fontFamily: "Quicksand"
+            fontFamily: "Quicksand",
+            color: "rgba(255, 255, 255, 0.85)"
         },
         position: {
             color: "#777777",
             fontFamily: "Quicksand"
         },
         name: {
-            fontFamily: "Quicksand"
+            fontFamily: "Quicksand",
+            color: "rgba(255, 255, 255, 0.85)"
         },
         card: {
             borderColor: "black",
             borderWidth: 2,
-            borderStyle: "solid"
+            borderStyle: "solid",
+            backgroundColor: "#212121",
+            borderRadius: 12
         }
     });
 
@@ -51,7 +56,8 @@ function TeamMember({name, position, major, school, image}) {
                     </Grid>
                 </Grid>
                 <Typography className={classes.name} gutterBottom={true} variant="h4" align="center">{name}</Typography>
-                <Typography align="center" gutterBottom={true} className={classes.position}
+                <Typography
+                    align="center" gutterBottom={true} className={classes.position}
                             variant="subtitle2">{position}</Typography>
                 <Typography align="center" gutterBottom={true} className={classes.major}
                             variant="subtitle1">{major}</Typography>

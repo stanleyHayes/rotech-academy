@@ -99,7 +99,7 @@ function HomePage() {
                             <Grid xs={12} md={4} item={true}>
                                 <TeamMember
                                     name={"Benedict Amoako"}
-                                    image={`${process.env.PUBLIC_URL}/logo512.png`}
+                                    image={`${process.env.PUBLIC_URL}/images/benedict.jpg`}
                                     major={"Information Technology Major"}
                                     position={"Founder / Lead Instructor"}
                                     school={"Academic City College"}
@@ -109,7 +109,7 @@ function HomePage() {
                             <Grid xs={12} md={4} item={true}>
                                 <TeamMember
                                     name={"Dillys Annan"}
-                                    image={`${process.env.PUBLIC_URL}/logo512.png`}
+                                    image={`${process.env.PUBLIC_URL}/images/photo_2020-05-18_20-26-52.jpg`}
                                     major={"Computer Engineering Major"}
                                     position={"Programs Coordinator"}
                                     school={"KNUST"}
@@ -118,10 +118,10 @@ function HomePage() {
 
                             <Grid xs={12} md={4} item={true}>
                                 <TeamMember
-                                    name={"Enam"}
-                                    image={`${process.env.PUBLIC_URL}/logo512.png`}
-                                    major={"Computer Science Major"}
-                                    position={"Content/Marketing Manager"}
+                                    name={"Enam Dartey"}
+                                    image={`${process.env.PUBLIC_URL}/images/photo_2020-05-18_20-26-32.jpg`}
+                                    major={"Computer Engineering Major"}
+                                    position={"Marketing Manager"}
                                     school={"KNUST"}
                                 />
                             </Grid>
@@ -150,12 +150,12 @@ function HomePage() {
                                 <ServiceItem
                                     disabled={false}
                                     title={"Online Robotics Course"}
-                                    line1={"2-Month Courses"}
+                                    line1={"8-Week Courses"}
                                     line2={"Free Robot Kit"}
-                                    line3={"Certificate of Achievement"}
-                                    line4={"STEM Curriculum"}
+                                    line3={"Certificate of Completion"}
+                                    line4={"Program a Real Robot"}
                                     line5={"STEM Curriculum"}
-                                    line6={"Ghc 500 Register Today!"}
+                                    line6={"Ghc 800 Register Today!"}
                                 />
                             </Grid>
                             <Grid item={true} xs={12} md={4}>

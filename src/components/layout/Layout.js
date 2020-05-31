@@ -9,7 +9,7 @@ function Layout(props) {
         container: {
             display: "flex",
             flexDirection: "column",
-            minHeight: "100vh"
+            minHeight: "100vh",
         },
         content: {
             flexGrow: 1
