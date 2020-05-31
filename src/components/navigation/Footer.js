@@ -40,7 +40,7 @@ function Footer() {
             fontWeight: 500
         },
         logoAvatar: {
-            width: "80%",
+            width: "100%",
             height: 140
         },
         slogan: {
