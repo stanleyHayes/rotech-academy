@@ -89,9 +89,9 @@ function HomePage() {
                         </Typography>
 
                         <Typography className={classes.service} gutterBottom={true} variant="body1">
-                            We provide services in the form of providing certified online robotics courses, training
-                            teams for national and international robotics competitions, as well as equipping young individuals
-                            with tools to develop commercial problem solving robots for industry.”
+                            Our services include: certified online robotics courses, training teams for national and
+                            international robotics competitions, as well as equipping young individuals with tools to
+                            develop commercial problem solving robots for industry.
                         </Typography>
 
                         <Typography align="center" className={classes.header} variant="h4">OUR TEAM</Typography>
