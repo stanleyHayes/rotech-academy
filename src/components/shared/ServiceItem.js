@@ -96,7 +96,9 @@ function ServiceItem({title, line1, line2, line3, line4, line5, line6, disabled}
             <Divider className={classes.divider} variant="fullWidth"/>
 
             <CardActions>
-                <a className={classes.link} target="_blank" href={`https://forms.gle/Kpkvn7qzAwLhUvwR7`}>
+                <a
+                    rel="noopener noreferrer"
+                    className={classes.link} target="_blank" href={`https://forms.gle/Kpkvn7qzAwLhUvwR7`}>
                     <Button
                         disabled={disabled}
                         className={classes.button}

@@ -1,7 +1,8 @@
 import React from "react";
-import {Container, Grid, Typography, Avatar} from "@material-ui/core";
+import {Container, Grid, Typography, Avatar, Button} from "@material-ui/core";
 import "../../App.css";
 import {makeStyles} from "@material-ui/styles";
+import {Facebook, Twitter, Instagram} from "@material-ui/icons";
 
 function Footer() {
 
@@ -47,7 +48,7 @@ function Footer() {
             color: "black",
             fontFamily: "Quicksand",
             fontWeight: 500,
-            fontSize: 14,
+            fontSize: 16,
             marginTop: 8,
             marginBottom: 8
         },
@@ -66,6 +67,18 @@ function Footer() {
             marginBottom: 8,
             fontFamily: "Quicksand",
             color: "black"
+        },
+        facebookButton: {
+            backgroundColor: "#1877f2",
+            color: "white"
+        },
+        twitterButton: {
+            backgroundColor: "#1da1f2",
+            color: "white"
+        },
+        instagramButton: {
+            backgroundColor: "#c32aa3",
+            color: "white"
         }
     });
 
@@ -91,15 +104,7 @@ function Footer() {
                                     className={classes.locationItem}
                                     align="center"
                                     variant="subtitle2">
-                                    Dome – Kwabenya Road
-                                </Typography>
-
-                                <Typography
-                                    gutterBottom={true}
-                                    className={classes.locationItem}
-                                    align="center"
-                                    variant="subtitle2">
-                                    Dome – Accra Ghana
+                                    Dome – Kwabenya Road,Accra Ghana
                                 </Typography>
 
                                 <Typography
@@ -107,6 +112,13 @@ function Footer() {
                                     align="center"
                                     className={classes.locationItem}>
                                     (+233)266072626/(+233)207004782
+                                </Typography>
+
+                                <Typography
+                                    variant="subtitle2"
+                                    align="center"
+                                    className={classes.locationItem}>
+                                    rotechacademy@gmail.com
                                 </Typography>
 
                                 <Typography
@@ -122,20 +134,49 @@ function Footer() {
                                     Social Media Links
                                 </Typography>
                                 <div className={classes.socialIconsContainer}>
-                                    <a href="" target="_blank" className={classes.socialLink}>
-                                        <i className="fab fa-facebook"/>
-                                        Facebook</a>
+                                    <a className={classes.socialLink}
+                                       target="_blank"
+                                       rel="noopener noreferrer"
+                                       href="https://web.facebook.com/RoTech-Academy-106990737702719">
+                                        <Button
+                                            disableElevation={true}
+                                            fullWidth={false}
+                                            className={classes.facebookButton}
+                                            startIcon={<Facebook />}
+                                            variant="contained">
+                                            Facebook
+                                        </Button>
+                                    </a>
                                 </div>
                                 <div className={classes.socialIconsContainer}>
-                                    <a href="https://twitter.com/rotechacademy" target="_blank"
-                                       className={classes.socialLink}><i className="fab fa-twitter"/>Twitter</a>
+                                    <a className={classes.socialLink}
+                                       target="_blank"
+                                       rel="noopener noreferrer"
+                                       href="https://twitter.com/rotechacademy">
+                                        <Button
+                                            className={classes.twitterButton}
+                                            disableElevation={true}
+                                            fullWidth={false}
+                                            startIcon={<Twitter/>}
+                                            variant="contained">
+                                            Twitter
+                                        </Button>
+                                    </a>
                                 </div>
                                 <div className={classes.socialIconsContainer}>
-                                    <a href="#" target="_blank" className={classes.socialLink}><i className="fab fa-instagram"/>Instagram</a>
-                                </div>
-                                <div className={classes.socialIconsContainer}>
-                                    <a href="mailto:rotechacademy@gmail.com" target="_blank"
-                                       className={classes.socialLink}><i className="fab fa-email"/>Email Us</a>
+                                    <a className={classes.socialLink}
+                                       target="_blank"
+                                       rel="noopener noreferrer"
+                                       href="https://www.instagram.com/rotech.academy/?hl=en">
+                                        <Button
+                                            className={classes.instagramButton}
+                                            disableElevation={true}
+                                            fullWidth={false}
+                                            startIcon={<Instagram/>}
+                                            variant="contained">
+                                            Instagram
+                                        </Button>
+                                    </a>
                                 </div>
                             </Grid>
 
@@ -151,7 +192,7 @@ function Footer() {
                                         <Typography
                                             className={classes.slogan}
                                             align="center"
-                                            variant="subtitle2">
+                                            variant="subtitle1">
                                             Developing Africa with Robotics
                                         </Typography>
                                     </div>

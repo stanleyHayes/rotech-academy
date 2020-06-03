@@ -18,7 +18,8 @@ function HomePage() {
             marginBottom: 16,
             paddingTop: 16,
             paddingBottom: 16,
-            fontFamily: "Quicksand"
+            fontFamily: "Quicksand",
+            textTransform: "uppercase"
         },
         service: {
             fontSize: 20,
@@ -158,9 +159,9 @@ function HomePage() {
                                     line1={"8-Week Courses"}
                                     line2={"Free Robot Kit"}
                                     line3={"Certificate of Completion"}
-                                    line5={"Program a Real Robot"}
+                                    line5={"Program a Real Robot!!!"}
                                     line4={"STEM Curriculum"}
-                                    line6={"Ghc 800 Register Today!"}
+                                    line6={"Ghc 800 Register Here!"}
                                 />
                             </Grid>
                             <Grid item={true} xs={12} md={4}>
