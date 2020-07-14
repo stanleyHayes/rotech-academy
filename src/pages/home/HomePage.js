@@ -76,7 +76,7 @@ function HomePage() {
                         <Typography align="center" className={classes.header} variant="h4">
                             MISSION AND VISION
                         </Typography>
-                        <ScrollAnimation animateIn="bounceInLeft" duration={1}>
+                        <ScrollAnimation animateOnce={true} animateIn="bounceInLeft" duration={1}>
                             <Typography variant="body1" className={classes.service}>
                                 Robotics and Technology Academy (ROTECH) seeks to equip
                                 young Africans with the necessary Science Technology Engineering and Mathematics (STEM)
@@ -88,7 +88,7 @@ function HomePage() {
 
                         <Typography align="center" className={classes.header} variant="h4">what we do</Typography>
 
-                        <ScrollAnimation animateIn="bounceInRight" duration={1}>
+                        <ScrollAnimation animateOnce={true} animateIn="bounceInRight" duration={1}>
                             <Typography className={classes.service} gutterBottom={true} variant="body1">
                                 We are a team of able robotics enthusiasts with over five years of experience in
                                 building
@@ -108,7 +108,7 @@ function HomePage() {
 
                         <Grid container={true} justify="center" spacing={3}>
                             <Grid xs={12} md={4} item={true}>
-                                <ScrollAnimation animateIn="bounceInLeft" duration={1}>
+                                <ScrollAnimation animateOnce={true} animateIn="bounceInLeft" duration={1}>
                                     <TeamMember
                                         name={"Benedict Amoako"}
                                         image={`${process.env.PUBLIC_URL}/images/benedict.jpg`}
@@ -120,7 +120,7 @@ function HomePage() {
                             </Grid>
 
                             <Grid xs={12} md={4} item={true}>
-                                <ScrollAnimation animateIn="fadeIn" duration={1}>
+                                <ScrollAnimation animateOnce={true} animateIn="fadeIn" duration={1}>
                                     <TeamMember
                                         name={"Dillys Annan"}
                                         image={`${process.env.PUBLIC_URL}/images/crop.jpg`}
@@ -132,7 +132,7 @@ function HomePage() {
                             </Grid>
 
                             <Grid xs={12} md={4} item={true}>
-                                <ScrollAnimation animateIn="bounceInRight" duration={1}>
+                                <ScrollAnimation animateOnce={true} animateIn="bounceInRight" duration={1}>
                                     <TeamMember
                                         name={"Enam Dartey"}
                                         image={`${process.env.PUBLIC_URL}/images/photo_2020-05-18_20-26-32.jpg`}
@@ -157,7 +157,7 @@ function HomePage() {
 
                         <Grid container={true} justify="center" spacing={3}>
                             <Grid item={true} xs={12} md={4}>
-                                <ScrollAnimation animateIn="bounceInLeft" duration={1}>
+                                <ScrollAnimation animateOnce={true} animateIn="bounceInLeft" duration={1}>
                                     <ServiceItem
                                         disabled={true}
                                         title={"Competition Training"}
@@ -170,7 +170,7 @@ function HomePage() {
                                 </ScrollAnimation>
                             </Grid>
                             <Grid item={true} xs={12} md={4}>
-                                <ScrollAnimation animateIn="fadeIn" duration={1}>
+                                <ScrollAnimation animateOnce={true} animateIn="fadeIn" duration={1}>
                                     <ServiceItem
                                         disabled={false}
                                         title={"Online Robotics Course"}
@@ -184,7 +184,7 @@ function HomePage() {
                                 </ScrollAnimation>
                             </Grid>
                             <Grid item={true} xs={12} md={4}>
-                                <ScrollAnimation animateIn="bounceInRight" duration={1}>
+                                <ScrollAnimation animateOnce={true} animateIn="bounceInRight" duration={1}>
                                     <ServiceItem
                                         disabled={true}
                                         title={"Research and Development"}

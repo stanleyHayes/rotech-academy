@@ -100,7 +100,7 @@ function ServiceItem({title, line1, line2, line3, line4, line5, line6, disabled}
                 <a
                     rel="noopener noreferrer"
                     className={`${classes.link}`} target="_blank" href={`https://forms.gle/Kpkvn7qzAwLhUvwR7`}>
-                    <ScrollAnimation animateIn="wobble" duration={1} delay={2000}>
+                    <ScrollAnimation animateOnce={true} animateIn="wobble" duration={1} delay={2000}>
                         <Button
                             disabled={disabled}
                             className={classes.button}

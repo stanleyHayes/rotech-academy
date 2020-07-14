@@ -95,7 +95,7 @@ function ContactPage() {
                     <Container>
                         <Typography className={classes.text} gutterBottom={true} align="center" variant="h3">Contact
                             Us</Typography>
-                        <ScrollAnimation animateIn="fadeIn" duration={1}>
+                        <ScrollAnimation animateOnce={true} animateIn="fadeIn" duration={1}>
                             <div>
                                 <Typography gutterBottom={true} variant="h6" align="center">
                                     Our team is always ready to answer any question you have about our services
@@ -113,7 +113,7 @@ function ContactPage() {
                     <Container>
                         <Grid container={true} justify="center" spacing={5}>
                             <Grid item={true} xs={12} md={8} lg={6}>
-                                <ScrollAnimation animateIn="wobble" duration={1}>
+                                <ScrollAnimation animateOnce={true} animateIn="wobble" duration={1}>
                                     <Card variant="elevation" raised={true} elevation={2}>
                                         <CardContent>
                                             <Typography className={classes.text} gutterBottom={true} variant="h6"
