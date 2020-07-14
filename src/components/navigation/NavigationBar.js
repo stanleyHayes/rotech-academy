@@ -20,7 +20,7 @@ function NavigationBar() {
     return (
         <AppBar
             position="fixed"
-            color="transparent"
+            square={true}
             className={classes.backgroundColor}
             variant="outlined">
             {

@@ -42,7 +42,7 @@ function MobileNavigationHeader() {
     }
 
     return (
-        <Toolbar variant="regular" className={classes.toolbar}>
+        <Toolbar variant="dense" className={classes.toolbar}>
             <div className={classes.container}>
                 <div>
                     <Button onClick={handleMenuItemClicked}>

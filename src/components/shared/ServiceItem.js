@@ -2,6 +2,7 @@ import React from "react";
 import {Card, CardContent, Typography, Divider, CardActions, Button, CardHeader} from "@material-ui/core";
 import {makeStyles} from "@material-ui/styles";
 import "../../App.css";
+import ScrollAnimation from "react-animate-on-scroll";
 
 function ServiceItem({title, line1, line2, line3, line4, line5, line6, disabled}) {
 
@@ -88,7 +89,7 @@ function ServiceItem({title, line1, line2, line3, line4, line5, line6, disabled}
                                     variant="subtitle1">{line4}</Typography>
                         <Divider variant="fullWidth"/>
                     </div>
-                ) : <div />}
+                ) : <div/>}
 
                 <Typography className={classes.item} gutterBottom={true} variant="subtitle1">{line5}</Typography>
 
@@ -98,14 +99,16 @@ function ServiceItem({title, line1, line2, line3, line4, line5, line6, disabled}
             <CardActions>
                 <a
                     rel="noopener noreferrer"
-                    className={classes.link} target="_blank" href={`https://forms.gle/Kpkvn7qzAwLhUvwR7`}>
-                    <Button
-                        disabled={disabled}
-                        className={classes.button}
-                        variant="contained"
-                        fullWidth={true}>
-                        {line6}
-                    </Button>
+                    className={`${classes.link}`} target="_blank" href={`https://forms.gle/Kpkvn7qzAwLhUvwR7`}>
+                    <ScrollAnimation animateIn="wobble" duration={1} delay={2000}>
+                        <Button
+                            disabled={disabled}
+                            className={classes.button}
+                            variant="outlined"
+                            fullWidth={true}>
+                            {line6}
+                        </Button>
+                    </ScrollAnimation>
                 </a>
             </CardActions>
         </Card>
