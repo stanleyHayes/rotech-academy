@@ -16,13 +16,20 @@ function DrawerContent() {
             marginTop: "16px"
         },
         contact: {
-            color: "blue"
+            color: "#333",
+            fontWeight: "bold",
+            fontFamily: "Quicksand"
         },
         home: {
-            color: "purple"
+            color: "#333",
+            fontWeight: "bold",
+            fontFamily: "Quicksand"
         },
         link: {
             textDecoration: "none"
+        },
+        icon: {
+            color: "#333"
         }
     });
 
@@ -46,7 +53,7 @@ function DrawerContent() {
                                 <Home className={classes.home}/>
                             </ListItemAvatar>
                             <Link className={classes.link} to="/">
-                                <ListItemText primary="Home"/>
+                                <ListItemText className={classes.home} primary="Home"/>
                             </Link>
                         </ListItem>
 
@@ -56,7 +63,7 @@ function DrawerContent() {
                                 <Email className={classes.contact}/>
                             </ListItemAvatar>
                             <Link className={classes.link} to="/contact">
-                                <ListItemText primary="Contact"/>
+                                <ListItemText  className={classes.home} primary="Contact"/>
                             </Link>
                         </ListItem>
                     </List>

@@ -63,9 +63,9 @@ function HomePage() {
     return (
         <Layout>
             <div>
-                <div className="section">
-                    <div>
-                        <img width="100%" src={`${process.env.PUBLIC_URL}/images/Rotech-logo.jpg`} alt="Rotech logo"/>
+                <div className="image-container">
+                    <div className="responsive-height">
+                        <img className="responsive-image" src={`${process.env.PUBLIC_URL}/images/Rotech-logo.jpg`} alt="Rotech logo"/>
                     </div>
                 </div>
 

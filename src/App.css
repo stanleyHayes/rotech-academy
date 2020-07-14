@@ -86,3 +86,24 @@ html, body{
 button.Mui-disabled{
   color: rgba(255, 255, 255, 0.45) !important;
 }
+
+.responsive-height{
+  height: 100vh;
+}
+
+@media screen and (max-width: 700px){
+  .responsive-height{
+    height: 50vh;
+  }
+}
+
+.responsive-image{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container{
+  display: flex;
+  align-items: center;
+}
