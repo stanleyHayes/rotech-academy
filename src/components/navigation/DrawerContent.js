@@ -1,15 +1,10 @@
 import React from "react";
-import {Container, Grid, ListItemAvatar, ListItem, ListItemText, List} from "@material-ui/core";
-import {
-    Home,
-    Email,
-} from "@material-ui/icons";
+import {Container, Grid, Divider} from "@material-ui/core";
 import {makeStyles} from "@material-ui/core/styles";
 import {Link} from "react-router-dom";
-
+import "../../App.css";
 
 function DrawerContent() {
-
 
     const useStyles = makeStyles({
         container: {
@@ -25,11 +20,39 @@ function DrawerContent() {
             fontWeight: "bold",
             fontFamily: "Quicksand"
         },
-        link: {
-            textDecoration: "none"
-        },
         icon: {
             color: "#333"
+        },
+
+        button: {
+            textAlign: "center",
+            fontFamily: "Quicksand"
+        },
+        link: {
+            color: "#777777",
+            textDecoration: "none"
+        },
+        avatar: {
+            width: 150,
+            height: 150,
+            border: "1px solid #888888"
+        },
+        avatarContainer: {
+            display: "flex",
+            justifyContent: "center",
+            marginBottom: 32
+        },
+        gridContainer: {
+            paddingTop: 32,
+            paddingBottom: 32
+        },
+        root: {
+            backgroundColor: "#f8f8f8",
+            minHeight: "100vh"
+        },
+        content: {
+            paddingLeft: 32,
+            paddingRight: 32
         }
     });
 
@@ -47,26 +70,21 @@ function DrawerContent() {
                 className={classes.container}>
 
                 <Grid item={true}>
-                    <List>
-                        <ListItem divider={true} button={true} id="home">
-                            <ListItemAvatar>
-                                <Home className={classes.home}/>
-                            </ListItemAvatar>
-                            <Link className={classes.link} to="/">
-                                <ListItemText className={classes.home} primary="Home"/>
+                    <div className={classes.content}>
+                        <p>
+                            <Link to="/"
+                                  className={`${classes.button}  ${classes.link} center-align font-weight-bold uppercase margin-vertical-small`}>
+                                Home
                             </Link>
-                        </ListItem>
-
-                        <ListItem
-                            divider={true} button={true} id="list">
-                            <ListItemAvatar>
-                                <Email className={classes.contact}/>
-                            </ListItemAvatar>
-                            <Link className={classes.link} to="/contact">
-                                <ListItemText  className={classes.home} primary="Contact"/>
+                        </p>
+                        <Divider variant="fullWidth" />
+                        <p>
+                            <Link to="/contact"
+                                  className={`${classes.button}  ${classes.link} center-align font-weight-bold uppercase margin-vertical-small`}>
+                                Contact
                             </Link>
-                        </ListItem>
-                    </List>
+                        </p>
+                    </div>
                 </Grid>
             </Grid>
         </Container>
