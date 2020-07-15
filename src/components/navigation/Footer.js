@@ -137,13 +137,13 @@ function Footer() {
                                     <a className={classes.socialLink}
                                        target="_blank"
                                        rel="noopener noreferrer"
-                                       href="https://web.facebook.com/RoTech-Academy-106990737702719">
+                                       href="https://facebook.com/RoTech-Academy-106990737702719">
                                         <Button
                                             disableElevation={true}
-                                            fullWidth={false}
+                                            fullWidth={true}
                                             className={classes.facebookButton}
                                             startIcon={<Facebook />}
-                                            variant="contained">
+                                            variant="outlined">
                                             Facebook
                                         </Button>
                                     </a>
@@ -156,9 +156,9 @@ function Footer() {
                                         <Button
                                             className={classes.twitterButton}
                                             disableElevation={true}
-                                            fullWidth={false}
+                                            fullWidth={true}
                                             startIcon={<Twitter/>}
-                                            variant="contained">
+                                            variant="outlined">
                                             Twitter
                                         </Button>
                                     </a>
@@ -171,9 +171,9 @@ function Footer() {
                                         <Button
                                             className={classes.instagramButton}
                                             disableElevation={true}
-                                            fullWidth={false}
+                                            fullWidth={true}
                                             startIcon={<Instagram/>}
-                                            variant="contained">
+                                            variant="outlined">
                                             Instagram
                                         </Button>
                                     </a>
