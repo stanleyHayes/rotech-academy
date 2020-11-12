@@ -6,79 +6,81 @@ import {Facebook, Twitter, Instagram} from "@material-ui/icons";
 
 function Footer() {
 
-    const useStyles = makeStyles({
-        container: {
-            display: "flex",
-            flexDirection: "column",
-            minHeight: "20vh",
-            fontFamily: "Quicksand",
-            justifyContent: "space-between",
-            flex: 1
-        },
-        mainLinksContainer: {},
-        contactContainer: {
-            backgroundColor: "black",
-            paddingTop: 16,
-            paddingBottom: 16,
-        },
-        contactTitle: {
-            color: "orange",
-            fontFamily: "Quicksand"
-        },
-        title: {
-            fontFamily: "Quicksand",
-            color: "black"
-        },
-        socialIconsContainer: {
-            textAlign: "center",
-            margin: 16
-        },
-        socialLink: {
-            color: "black",
-            fontSize: 14,
-            textDecoration: "none",
-            fontFamily: "Quicksand",
-            fontWeight: 500
-        },
-        logoAvatar: {
-            width: "100%",
-            height: 140
-        },
-        slogan: {
-            color: "black",
-            fontFamily: "Quicksand",
-            fontWeight: 500,
-            fontSize: 16,
-            marginTop: 8,
-            marginBottom: 8
-        },
-        sloganContainer: {
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center"
-        },
-        avatarContainer: {
-            textAlign: "center",
-            marginBottom: 8
-        },
-        locationItem: {
-            marginTop: 8,
-            marginBottom: 8,
-            fontFamily: "Quicksand",
-            color: "black"
-        },
-        facebookButton: {
-            backgroundColor: "#1877f2",
-            color: "white"
-        },
-        twitterButton: {
-            backgroundColor: "#1da1f2",
-            color: "white"
-        },
-        instagramButton: {
-            backgroundColor: "#c32aa3",
-            color: "white"
+    const useStyles = makeStyles(theme => {
+        return {
+            container: {
+                display: "flex",
+                flexDirection: "column",
+                minHeight: "20vh",
+                fontFamily: "Quicksand",
+                justifyContent: "space-between",
+                flex: 1
+            },
+            mainLinksContainer: {},
+            contactContainer: {
+                backgroundColor: "black",
+                paddingTop: 16,
+                paddingBottom: 16,
+            },
+            contactTitle: {
+                color: "orange",
+                fontFamily: "Quicksand"
+            },
+            title: {
+                fontFamily: "Quicksand",
+                color: "black"
+            },
+            socialIconsContainer: {
+                textAlign: "center",
+                margin: 16
+            },
+            socialLink: {
+                color: "black",
+                fontSize: 14,
+                textDecoration: "none",
+                fontFamily: "Quicksand",
+                fontWeight: 500
+            },
+            logoAvatar: {
+                width: "100%",
+                height: 140
+            },
+            slogan: {
+                color: "black",
+                fontFamily: "Quicksand",
+                fontWeight: 500,
+                fontSize: 16,
+                marginTop: 8,
+                marginBottom: 8
+            },
+            sloganContainer: {
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center"
+            },
+            avatarContainer: {
+                textAlign: "center",
+                marginBottom: 8
+            },
+            locationItem: {
+                marginTop: 8,
+                marginBottom: 8,
+                fontFamily: "Quicksand",
+                color: "black"
+            },
+            facebookButton: {
+                backgroundColor: "#1877f2",
+                color: "white"
+            },
+            twitterButton: {
+                backgroundColor: "#1da1f2",
+                color: "white"
+            },
+            instagramButton: {
+                backgroundColor: "#c32aa3",
+                color: "white"
+            }
         }
     });
 

@@ -12,6 +12,11 @@ const theme = createMuiTheme({
     },
     shape: {
         borderRadius: 16
+    },
+    palette: {
+        primary: {
+            main: "#000000"
+        }
     }
 });
 
