@@ -3,10 +3,24 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {createMuiTheme} from "@material-ui/core";
+import {ThemeProvider} from "@material-ui/core";
+
+const theme = createMuiTheme({
+    typography: {
+        fontFamily: 'Quicksand'
+    },
+    shape: {
+        borderRadius: 16
+    }
+});
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <ThemeProvider theme={theme}>
+          <App />
+      </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

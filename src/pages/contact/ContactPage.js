@@ -74,8 +74,12 @@ function ContactPage() {
             marginTop: 18,
             marginBottom: 16,
             color: "black",
-            backgroundColor: "orange",
-            fontFamily: "Quicksand"
+            backgroundColor: "#ffa500",
+            fontFamily: "Quicksand",
+            transition: "all 500ms 100ms ease-out",
+            '&:hover': {
+                backgroundColor: "#ffb230",
+            }
         },
         divContainer: {
             background: "#eeeeee",
@@ -220,7 +224,7 @@ function ContactPage() {
                                             <Button
                                                 className={classes.button}
                                                 disabled={loading}
-                                                variant="contained"
+                                                variant="outlined"
                                                 size="large"
                                                 fullWidth={true}
                                                 onClick={handleSubmit}>

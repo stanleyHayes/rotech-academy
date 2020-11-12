@@ -69,7 +69,7 @@ function HomePage() {
                     </div>
                 </div>
 
-                <div id="mission-and-vision" className="section orange-background">
+                <div id="about" className="section orange-background">
                     <Container>
                         <Typography align="center" className={classes.header} variant="h3">ABOUT US</Typography>
 
@@ -136,9 +136,9 @@ function HomePage() {
                                     <TeamMember
                                         name={"Enam Dartey"}
                                         image={`${process.env.PUBLIC_URL}/images/photo_2020-05-18_20-26-32.jpg`}
-                                        major={"Computer Engineering Major"}
+                                        major={""}
                                         position={"Marketing Manager"}
-                                        school={"KNUST"}
+                                        school={""}
                                     />
                                 </ScrollAnimation>
                             </Grid>

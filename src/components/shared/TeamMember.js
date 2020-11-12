@@ -37,7 +37,7 @@ function TeamMember({name, position, major, school, image}) {
             borderWidth: 2,
             borderStyle: "solid",
             backgroundColor: "#212121",
-            borderRadius: 12
+            minHeight: 320
         }
     });
 
